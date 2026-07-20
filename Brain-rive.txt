@@ -1,0 +1,48 @@
++ salut
+- Salutare! Eu te voi ajuta cu informații despre facultate. Care este numele tau ?
+- Bună! Sunt asistentul tau virtual universitar. Cum te cheama ?
+
++ ma numesc *
+- <set name=<formal>> Incatat de cunostinta, <get name>! La ce facultate esti student ? 
+
++ sunt la facultatea de *
+- <set facultate=<star>> Interesant domeniul <get facultate>. In ce an de studiu esti ?
+
++ sunt in anul *
+- <set an=<star>> Am retinut. Esti in anul <get an> la <get facultate>. Cu ce te pot ajuta astazi ?
+
++ cand am examene
+* <get name> == undefined => Te rog sa-mi spui mai întai cum te cheama ca sa pot accesa baza de date.
+* <get an> == 1 => <get name>, fiind în anul 1, sesiunea ta incepe pe 20 ianuarie
+* <get an> == 2 => <get name>, sesiunea pentru anul 2 incepe pe 25 ianuarie.
+* <get an> == 3 => <get name>, sesiunea pentru anul 3 incepe pe 30 ianuarie.
+- <get name>, pentru anul tau de studiu, programarea va fi afișată in curand pe site.
+
++ unde este secretariatul
+- Secretariatul este in corpul A, etajul 1. Programul este Luni-Vineri, 10:00 - 12:00.
+
++ unde este biblioteca
+- Biblioteca Centrala se afla vizavi de cantina. Ai nevoie de legitimatia de student vizata.
+
++ vreau detalii despre bursa
+- Bursele de merit se acorda studentiilor cu media peste 9.50. Dosarele se depun la secretariat.
+
++ cine esti
+- Sunt un agent inteligent creat pentru a asista studentii cu informatii administrative.
+
++ detalii despre cursul de *
+- Cursul de <star> se tine in amfiteatrul <get facultate> 1. Verifica orarul pentru ora.
+
++ multumesc
+- Cu placere, <get name>! Succes la învatat!
+
++ ajutor 
+- Desigur ! Iata o lista cu lucrurile pe care le pot face pentru tine:\n
+^ Înregistrare: "Ma numesc [nume]", "Sunt la facultatea de [nume]", "Sunt in anul [an]"\n
+^ Examene: "Cand am examene"\n
+^ Locații: "Unde este biblioteca" sau "Orar secretariat"\n
+^ Burse: "Vreau detalii despre bursa"\n
+^ Cursuri: "Detalii despre cursul de [nume curs]"
+
++ *
+- Îmi pare rau, nu am inteles intrebarea/raspunsul. Poti scrie "ajutor" pentru a vedea lista de comenzi disponibile.

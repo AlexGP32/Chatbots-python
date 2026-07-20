@@ -1,0 +1,10 @@
+from rivescript import RiveScript
+bot = RiveScript()
+bot.load_file("./Brain-rive.txt")
+bot.sort_replies()
+while True:
+    msg = input("You> ")
+    if msg == "/quit":
+        quit()
+    reply = bot.reply("localuser", msg)
+    print('Bot>', reply)
